@@ -20,7 +20,7 @@ class OfferForm extends Component{
       Lang : this.refs.lang.value,
       CreateDate : new Date()
     }
-    $.post("http://54.67.44.199:3000/api/OfferProviders", data, function(success){
+    $.post("http://54.67.44.199/api/OfferProviders", data, function(success){
         alert("Provider Saved Successfully");
     });
 

@@ -11,7 +11,7 @@ class OfferProviderList extends Component{
   }
 
   componentDidMount() {
-    this.serverRequest = $.get("http://54.67.44.199:3000/api/OfferProviders", function (providers) {   
+    this.serverRequest = $.get("http://54.67.44.199/api/OfferProviders", function (providers) {   
     this.rows = providers.map(provider => {    
       return(
         <tr>

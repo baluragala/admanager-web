@@ -11,7 +11,7 @@ class OfferList extends Component{
   }
 
   componentDidMount() {
-    this.serverRequest = $.get('http://54.67.44.199:3000/api/Offers?filter={"include":"offerProvider"}', function (offers) { 
+    this.serverRequest = $.get('http://54.67.44.199/api/Offers?filter={"include":"offerProvider"}', function (offers) { 
       
     this.rows = offers.map(offer => {
       console.log(offer)

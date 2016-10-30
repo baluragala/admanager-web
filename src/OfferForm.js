@@ -11,7 +11,7 @@ class OfferProviderForm extends Component{
   }
 
   componentWillMount() {
-    this.serverRequest = $.get('http://54.67.44.199:3000/api/OfferProviders', function (offerProviders) { 
+    this.serverRequest = $.get('http://54.67.44.199/api/OfferProviders', function (offerProviders) { 
     
     this.rows = offerProviders.map(offerProvider => {
       return(
